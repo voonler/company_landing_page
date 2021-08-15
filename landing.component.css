@@ -1,0 +1,25 @@
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://pbs.twimg.com/profile_images/1237343547591987200/VnDUq5J4_400x400.jpg');
+    background-size: cover;
+  }
+
+  .example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+  }
+
+  a {text-decoration: none;}
+
+  mat-form-field {
+    margin-right: 10px;
+  }
+ 
+
+.violette-snackbar {
+  background: rgb(180, 17, 255);
+}

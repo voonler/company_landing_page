@@ -1,0 +1,89 @@
+<mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>SIXT</mat-card-title>
+        <mat-card-subtitle>Autovermietung</mat-card-subtitle>
+      </mat-card-header>
+
+
+      <mat-carousel
+
+
+      proportion="60"
+      hideArrows=false
+      hideIndicators=false
+>
+  <mat-carousel-slide
+    #matCarouselSlide
+
+    image="https://media1.autohaus.de/sixcms/media.php/5172/thumbnails/BMW_7er_Facelift_2.jpg.26329173.jpg"
+    overlayColor="#00000040"
+
+  ></mat-carousel-slide>
+  <mat-carousel-slide
+    #matCarouselSlide
+
+    image="https://static.shop.frankfurt-airport.com/retailer-images/483/16-9/w/1920/sx-1920x1080-2.jpg"
+    overlayColor="#00000040"
+
+  ></mat-carousel-slide>
+
+<mat-carousel-slide
+    #matCarouselSlide
+
+    image="https://images.boersenmedien.com/images/e22a9cdb-98b2-4d17-9c06-95960b82887f.jpg"
+    overlayColor="#00000040"
+
+  ></mat-carousel-slide>
+</mat-carousel>
+
+
+
+
+
+
+
+      <mat-card-content >
+        <mat-nav-list >
+
+          <mat-list-item  *ngFor="let menue of menues"
+          matTooltip={{menue.name}} matTooltipPosition="before">
+
+            <a mat-list-item routerLink={{menue.link}}>
+            <mat-icon mat-list-icon>{{menue.icon}}</mat-icon>
+            <div mat-line>{{menue.name}} </div>
+            <div mat-line> {{menue.description}} </div>
+
+          </a>
+          </mat-list-item>
+
+      </mat-nav-list>
+      <form action="/action_page.php">
+        <input type="file" id="myFile" name="filename">
+        <input type="submit">
+      </form>
+
+    </mat-card-content>
+
+      <mat-card-actions>
+        <div class="example-flex-container">
+        <button mat-icon-button aria-label (click)="openSnackBar('Unternehmen hinzugefügt', 'OK')"
+        matTooltip="Unternehmen merken">
+
+          <mat-icon>favorite</mat-icon>
+        </button>
+
+        <button mat-icon-button onclick="window.open('mailto:n.krstonijevic@hm.edu')">
+        <mat-icon>email</mat-icon>
+        </button>
+
+        <a *ngIf="url != null"  mat-icon-button href="https://hm.edu" target="_blank"><mat-icon>info</mat-icon></a>
+        <a mat-icon-button href="mailto:abcd@xyz.mno"><mat-icon>email</mat-icon></a>
+
+      </div>
+      </mat-card-actions>
+
+    </mat-card>
+
+
+
